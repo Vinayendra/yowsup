@@ -10,7 +10,165 @@
       {
         "title": "tets",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 492,
+                "y": 114
+              },
+              "angle": 0,
+              "id": "3603c348-1d41-45a9-af41-11a492a4bb57",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 318,
+                "y": 7
+              },
+              "target": {
+                "x": 413,
+                "y": 512
+              },
+              "vertices": [
+                {
+                  "x": 313,
+                  "y": 134
+                }
+              ],
+              "id": "ffd1807d-6e12-43df-b083-78f04d17bdb9",
+              "z": 2,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 663,
+                "y": 434
+              },
+              "angle": 0,
+              "id": "bc6735d0-c10a-44cd-80ab-57254f3b2ced",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 2"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 22,
+                "y": 66
+              },
+              "angle": 0,
+              "id": "ada3f3f1-1b66-4b03-b0b3-47409ff8bd1a",
+              "z": 4,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "hack",
+                  "type": "Spoofing"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 3"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ada3f3f1-1b66-4b03-b0b3-47409ff8bd1a"
+              },
+              "target": {
+                "id": "3603c348-1d41-45a9-af41-11a492a4bb57"
+              },
+              "vertices": [
+                {
+                  "x": 254,
+                  "y": 83
+                },
+                {
+                  "x": 367,
+                  "y": 106
+                }
+              ],
+              "id": "68bd251b-796d-4404-8e79-ace8b7bccc04",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 4",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 825
+        }
       }
     ],
     "reviewer": "test"
